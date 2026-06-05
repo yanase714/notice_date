@@ -232,6 +232,4 @@ while panel.life != 0:
 
 print("========done========")
 
-
   #panel.life = 0
-
