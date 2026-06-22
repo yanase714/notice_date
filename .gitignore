@@ -1,1 +1,16 @@
+# APIキー
 .env
+
+# Python仮想環境
+venv/
+
+# Pythonキャッシュ
+__pycache__/
+*.pyc
+
+# VSCode設定
+.vscode/
+
+# OS関連
+.DS_Store
+Thumbs.db
