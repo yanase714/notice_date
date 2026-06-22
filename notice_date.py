@@ -1,15 +1,17 @@
-# レシート画像からの消費期限・賞味期限の通知システム
+from openai import OpenAI
+from dotenv import load_dotenv
 
-# AIにレシート画像を送る
+print("ライブラリ読み込み成功")
 
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
 
-# 商品名等を食材名にして、購入日とともにjson形式で返させる
+load_dotenv()
 
+api_key = os.getenv("OPENAI_API_KEY")
 
-# 返ってきた食材名から、保存期間を対応させる。購入日から消費期限・賞味期限を決定する。
-
-
-# 確認画面表示。必要に応じてユーザが修正。
-
-
-# 消費期限・賞味期限の商品をその日のユーザの画面に出力させる。
+if api_key:
+    print("APIキーを読み込めました")
+else:
+    print("APIキーが読み込めていません")
