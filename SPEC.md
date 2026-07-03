@@ -3,7 +3,7 @@
 
 ## フォルダ構成
 
-```bash
+```text
 receipt-expiration-app/
 ├─ frontend/
 │ ├─app/
@@ -27,6 +27,7 @@ receipt-expiration-app/
 ├─ backend/
 │ ├─ main.py
 │ ├─ openai_receipt.py
+│ ├─ prompts.py
 │ ├─ food_normalizer.py
 │ ├─ expiration.py
 │ ├─ database.py
@@ -45,7 +46,7 @@ receipt-expiration-app/
 
 ### AI出力(消費期限・賞味期限計算前)
 
-```bash
+```json
 {
   "purchase_date": "YYYY-MM-DD",
   "foods": [
@@ -59,7 +60,7 @@ receipt-expiration-app/
 
 ### 消費期限・賞味期限計算後
 
-```bash
+```json
 {
   "purchase_date": "YYYY-MM-DD",
   "foods": [
